@@ -19,10 +19,10 @@ jobs:
       - name: Build preload.so
         run: |
           cd exploit
-          make PROJECT=mydevice API=26
+          make PROJECT=ana-an00 API=26
 
       - name: Upload preload.so
         uses: actions/upload-artifact@v4
         with:
           name: preload
-          path: exploit/build/mydevice/bin/preload.so
+          path: exploit/build/ana-an00/bin/preload.so
